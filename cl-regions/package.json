@@ -1,0 +1,15 @@
+{
+  "name": "cl-regions",
+  "version": "1.0.0",
+  "description": "Proyecto de librería regiones/provincias/comunas actualizado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Aetos13",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
