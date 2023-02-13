@@ -2,6 +2,5 @@
   "version": "0.1.0",
   "description": "Chilean (CL) regions, provinces and communes",
   "keywords": ["cl", "chile", "regions", "provinces", "communes", "regiones", "provincias", "comunas"],
-  "license": "MIT",
-  "private": "true"
+  "license": "MIT"
 }
