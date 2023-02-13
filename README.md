@@ -1,4 +1,21 @@
-Readme
+# Chile regiones, provincias y comunas
 
-El archivo solitario del repositorio "cl-regions.json" es el archivo main actualizado de las regiones/provincias/comunas,
- se actualizará el proyecto ya creado en typescript para adaptarlo una versión mejorada.
+
+
+
+## Instalación
+
+Con npm 
+```bash
+$ npm install @clregions/core
+```
+
+Con yarn 
+```bash
+$ yarn add @clregions/core
+```
+
+Con pnpm
+```bash
+$ pnpm add @clregions/core
+```
