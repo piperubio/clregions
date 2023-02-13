@@ -1,8 +1,5 @@
 # Chile regiones, provincias y comunas
 
-
-
-
 ## Instalación
 
 Con npm 
