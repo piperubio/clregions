@@ -23,9 +23,6 @@ importers:
       typescript: 4.9.5
       vitest: 0.28.4
 
-  packages/react:
-    specifiers: {}
-
   packages/tsconfig:
     specifiers:
       '@tsconfig/node16': ^1.0.3
