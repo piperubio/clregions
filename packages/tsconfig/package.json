@@ -1,5 +1,6 @@
 {
   "name": "@clregions/tsconfig",
+  "version": "0.1.0",
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3"
   }
