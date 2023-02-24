@@ -103,9 +103,6 @@ export const getAllCommunes = (): Record<string, CLCommune> | null =>
       {}
     );
 
-//16301
-//163
-
 export const getCommuneById = (communeId: CommuneId): CLCommune | null => {
   try {
     return _clLocationData.regions[communeId.slice(0, 2)].provinces[
