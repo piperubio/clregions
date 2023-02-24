@@ -17,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
+    "@clregions/data": "workspace:*",
     "@clregions/tsconfig": "workspace:*",
     "@types/node": "^18.13.0",
     "@vitest/coverage-c8": "^0.28.4",

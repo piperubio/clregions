@@ -1,4 +1,4 @@
-import clData from "../data/data.json";
+import clData from "@clregions/data";
 import { CLCountry, CLRegion, CLProvince, CLCommune } from "../src";
 import * as fs from "node:fs";
 
