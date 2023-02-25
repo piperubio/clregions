@@ -2,13 +2,17 @@
 
 ¡Bienvenido! Con nuestra librería de TypeScript, podrás acceder fácilmente a información actualizada y precisa sobre las regiones, provincias y comunas de Chile, ahorrando tiempo y esfuerzo al no tener que recopilar y mantener los datos tú mismo.
 
-🔒 clregions ofrece una estructura de tipos segura para trabajar con confianza en la integridad de tus datos.
+🔒 Ofrece una estructura de tipos segura para trabajar con confianza en la integridad de tus datos.
 
-🌎 clregions te permite trabajar con datos geográficos de una manera intuitiva y fácil de entender.
+🌎 Te permite trabajar con datos geográficos de una manera intuitiva y fácil de entender.
 
-🚫 La librería clregions no tiene dependencias externas, lo que reduce los conflictos de versiones y simplifica el proceso de instalación.
+🚫 La librería clregions no tiene dependencias externas, lo que reduce los conflictos de versiones y simplifica el proceso de instalación. 
 
-🤖 clregions se integra perfectamente con TypeScript y es fácil de usar para nuevos usuarios.
+🚀 Compatible con Node.js a partir de la versión 14, lo que te permite utilizarla en tus proyectos de backend.
+
+🌐 También es compatible con los navegadores web, lo que te permite utilizarla en tus proyectos frontend.
+
+🤖 Se integra perfectamente con TypeScript y es fácil de usar para nuevos usuarios.
 
 🎨 clregions es altamente personalizable y puedes utilizar sólo una parte de la librería si eso es todo lo que necesitas.
 
@@ -59,7 +63,7 @@ const region: CLRegion | null = getRegionById('13');
 ```ts
 import { getAllProvinces } from '@clregions/core';
 
-const provinces = getAllProvinces();
+const provinces: Record<string, CLProvince> = getAllProvinces();
 ```
 
 ## Obtener una provincia por su código
@@ -75,7 +79,7 @@ const province: CLProvince | null = getProvinceById('011');
 ```ts
 import { getAllCommunes } from '@clregions/core';
 
-const communes = getAllCommunes();
+const communes: Record<string, CLCommune> = getAllCommunes();
 ```
 
 ## Obtener una comuna por su código
@@ -85,5 +89,3 @@ import { getCommuneById } from '@clregions/core';
 
 const commune: CLCommune | null = getCommuneById('01101');
 ```
-
-
