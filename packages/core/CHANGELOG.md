@@ -1,5 +1,12 @@
 # @clregions/core
 
+## 0.1.6
+
+### Patch Changes
+
+- Removed data export functionality
+- Updated functions to return a new object to prevent mutation of the original data.
+
 ## 0.1.5
 
 ### Patch Changes
