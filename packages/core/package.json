@@ -8,7 +8,7 @@
     "dist",
     "README.md"
   ],
-  "repository": "github:krouw/clregions",
+  "repository": "github:piperubio/clregions",
   "keywords": [
     "cl",
     "chile",
@@ -17,7 +17,12 @@
     "communes",
     "regiones",
     "provincias",
-    "comunas"
+    "comunas",
+    "npm",
+    "typescript",
+    "javascript",
+    "ts",
+    "js"
   ],
   "engines": {
     "node": ">=14"
