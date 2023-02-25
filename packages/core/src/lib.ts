@@ -6,10 +6,12 @@ import { _clLocationData } from "./generate-data";
  * This comment _supports_ [Markdown](https://marked.js.org/)
  */
 export const getAllRegions = (): Record<string, CLRegion> =>
-  _clLocationData.regions;
+  JSON.parse(JSON.stringify(_clLocationData.regions));
 
 export const getRegionById = (regionId: RegionId): CLRegion | null =>
-  _clLocationData.regions[regionId] ? _clLocationData.regions[regionId] : null;
+  _clLocationData.regions[regionId]
+    ? JSON.parse(JSON.stringify(_clLocationData.regions[regionId]))
+    : null;
 
 export const getAllProvincesByRegion = (
   regionId: RegionId
@@ -19,7 +21,9 @@ export const getAllProvincesByRegion = (
   }
 
   return Object.entries(
-    _clLocationData.regions[regionId as RegionId].provinces
+    JSON.parse(
+      JSON.stringify(_clLocationData.regions[regionId as RegionId].provinces)
+    )
   ).reduce(
     (acc, [key, value]) => ({
       ...acc,
@@ -36,7 +40,11 @@ export const getAllCommunesByRegion = (
     return null;
   }
 
-  return Object.values(_clLocationData.regions[regionId].provinces)
+  return Object.values(
+    JSON.parse(
+      JSON.stringify(_clLocationData.regions[regionId].provinces)
+    ) as Record<string, CLProvince>
+  )
     .map((province) => Object.entries(province.communes))
     .flat()
     .reduce(
@@ -50,7 +58,9 @@ export const getAllCommunesByRegion = (
 
 export const getAllProvinces = (): Record<string, CLProvince> =>
   Object.values(_clLocationData.regions)
-    .map((region) => Object.entries(region.provinces))
+    .map((region) =>
+      Object.entries(JSON.parse(JSON.stringify(region.provinces)))
+    )
     .flat()
     .reduce(
       (acc, [key, value]) => ({
@@ -63,11 +73,15 @@ export const getAllProvinces = (): Record<string, CLProvince> =>
 export const getProvinceById = (provinceId: ProvinceId): CLProvince | null => {
   try {
     return (
-      _clLocationData.regions[
-        provinceId.length === 2
-          ? provinceId.slice(0, 1)
-          : provinceId.slice(0, 2)
-      ].provinces[provinceId] || null
+      JSON.parse(
+        JSON.stringify(
+          _clLocationData.regions[
+            provinceId.length === 2
+              ? provinceId.slice(0, 1)
+              : provinceId.slice(0, 2)
+          ].provinces[provinceId]
+        )
+      ) || null
     );
   } catch {
     return null;
@@ -79,8 +93,12 @@ export const getAllCommunesByProvince = (
 ): Record<string, CLCommune> | null => {
   try {
     return Object.entries(
-      _clLocationData.regions[provinceId.slice(0, 2)].provinces[provinceId]
-        .communes
+      JSON.parse(
+        JSON.stringify(
+          _clLocationData.regions[provinceId.slice(0, 2)].provinces[provinceId]
+            .communes
+        )
+      )
     ).reduce(
       (acc, [key, value]) => ({
         ...acc,
@@ -109,9 +127,11 @@ export const getAllCommunes = (): Record<string, CLCommune> =>
 
 export const getCommuneById = (communeId: CommuneId): CLCommune | null => {
   try {
-    return _clLocationData.regions[communeId.slice(0, 2)].provinces[
-      communeId.slice(0, 3)
-    ].communes[communeId];
+    return {
+      ..._clLocationData.regions[communeId.slice(0, 2)].provinces[
+        communeId.slice(0, 3)
+      ].communes[communeId],
+    };
   } catch {
     return null;
   }

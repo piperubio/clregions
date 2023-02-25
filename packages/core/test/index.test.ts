@@ -20,12 +20,20 @@ const expectNullForInvalidValues = (fn: (arg: any) => void) => {
   expect(fn("181")).toBeNull();
 };
 
-test("getAllRegions", () => {
-  const regions = getAllRegions();
-  for (let i = 1; i <= 16; i++) {
-    expect(regions).toHaveProperty(i < 10 ? `0${i}` : `${i}`);
-  }
-  expect(Object.values(regions)).toHaveLength(16);
+describe("getAllRegions", () => {
+  test("should return all regions", () => {
+    const regions = getAllRegions();
+    for (let i = 1; i <= 16; i++) {
+      expect(regions).toHaveProperty(i < 10 ? `0${i}` : `${i}`);
+    }
+    expect(Object.values(regions)).toHaveLength(16);
+  });
+  test("Inmutable regions", () => {
+    const mutatedRegions = getAllRegions();
+    mutatedRegions["01"].name = "Hola";
+    const regions = getAllRegions();
+    expect(regions["01"].name).toBe("Región de Tarapacá");
+  });
 });
 
 describe("getRegionById", () => {
@@ -45,8 +53,16 @@ describe("getRegionById", () => {
     expect(Object.values(region?.provinces || [])).toHaveLength(3);
   });
 
-  test("when region code is invalid, should throw an error", () => {
+  test("when region code is invalid, should return null", () => {
     expectNullForInvalidValues(getRegionById);
+  });
+
+  test("Inmutable region", () => {
+    const mutatedRegion = getRegionById("01");
+    if (!mutatedRegion) return;
+    mutatedRegion.name = "Hola";
+    const region = getRegionById("01");
+    expect(region).toHaveProperty("name", "Región de Tarapacá");
   });
 });
 
@@ -63,6 +79,15 @@ describe("getAllProvincesByRegion", () => {
 
   test("when region code is invalid, should throw an error", () => {
     expectNullForInvalidValues(getAllProvincesByRegion);
+  });
+
+  test("Inmutable provinces", () => {
+    const mutatedProvinces = getAllProvincesByRegion("01");
+    if (!mutatedProvinces) return;
+    mutatedProvinces["011"].name = "Hola";
+    const provinces = getAllProvincesByRegion("01");
+    expect(provinces).toHaveProperty("011");
+    expect(provinces?.["011"]).toHaveProperty("name", "Iquique");
   });
 });
 
@@ -81,6 +106,15 @@ describe("getAllCommunesByRegion", () => {
 
   test("when region code is invalid, should throw an error", () => {
     expectNullForInvalidValues(getAllCommunesByRegion);
+  });
+
+  test("Inmutable communes", () => {
+    const mutatedCommunes = getAllCommunesByRegion("01");
+    if (!mutatedCommunes) return;
+    mutatedCommunes["01101"].name = "Hola";
+    const communes = getAllCommunesByRegion("01");
+    expect(communes).toHaveProperty("01101");
+    expect(communes?.["01101"]).toHaveProperty("name", "Iquique");
   });
 });
 
@@ -113,15 +147,33 @@ describe("getProvinceById", () => {
   test("when province code is invalid, should return null", () => {
     expectNullForInvalidValues(getProvinceById);
   });
+
+  test("Inmutable province", () => {
+    const mutatedProvince = getProvinceById("011");
+    if (!mutatedProvince) return;
+    mutatedProvince.name = "Hola";
+    const province = getProvinceById("011");
+    expect(province).toHaveProperty("name", "Iquique");
+  });
 });
 
 test("getAllCommunes", () => {
-  const communes = getAllCommunes();
-  expect(Object.values(communes || [[]])).toHaveLength(367);
-  // Comunas al azar
-  expect(communes).toHaveProperty("01101");
-  expect(communes).toHaveProperty("15101");
-  expect(communes).toHaveProperty("13101");
+  test("should return all communes", () => {
+    const communes = getAllCommunes();
+    expect(Object.values(communes || [[]])).toHaveLength(367);
+    // Comunas al azar
+    expect(communes).toHaveProperty("01101");
+    expect(communes).toHaveProperty("15101");
+    expect(communes).toHaveProperty("13101");
+  });
+
+  test("Inmutable communes", () => {
+    const mutatedCommunes = getAllCommunes();
+    mutatedCommunes["01101"].name = "Hola";
+    const communes = getAllCommunes();
+    expect(communes).toHaveProperty("01101");
+    expect(communes?.["01101"]).toHaveProperty("name", "Iquique");
+  });
 });
 
 describe("getAllCommunesByProvince", () => {
@@ -140,6 +192,15 @@ describe("getAllCommunesByProvince", () => {
   test("when province code is invalid, should return null", () => {
     expectNullForInvalidValues(getAllCommunesByProvince);
   });
+
+  test("Inmutable communes", () => {
+    const mutatedCommunes = getAllCommunesByProvince("011");
+    if (!mutatedCommunes) return;
+    mutatedCommunes["01101"].name = "Hola";
+    const communes = getAllCommunesByProvince("011");
+    expect(communes).toHaveProperty("01101");
+    expect(communes?.["01101"]).toHaveProperty("name", "Iquique");
+  });
 });
 
 describe("getCommuneById", () => {
@@ -157,5 +218,13 @@ describe("getCommuneById", () => {
 
   test("when commune code is invalid, should to be null", () => {
     expectNullForInvalidValues(getCommuneById);
+  });
+
+  test("Inmutable commune", () => {
+    const mutatedCommune = getCommuneById("01101");
+    if (!mutatedCommune) return;
+    mutatedCommune.name = "Hola";
+    const commune = getCommuneById("01101");
+    expect(commune).toHaveProperty("name", "Iquique");
   });
 });

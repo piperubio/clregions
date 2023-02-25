@@ -6,7 +6,11 @@
 
 🌎 clregions te permite trabajar con datos geográficos de una manera intuitiva y fácil de entender.
 
-🚫 La librería clregions no tiene dependencias externas, lo que reduce los conflictos de versiones y simplifica el proceso de instalación.
+🚫 La librería clregions no tiene dependencias externas, lo que reduce los conflictos de versiones y simplifica el proceso de instalación. 
+
+🚀 Compatible con Node.js a partir de la versión 14, lo que te permite utilizarla en tus proyectos de backend.
+
+🌐 También es compatible con los navegadores web, lo que te permite utilizarla en tus proyectos frontend.
 
 🤖 clregions se integra perfectamente con TypeScript y es fácil de usar para nuevos usuarios.
 
