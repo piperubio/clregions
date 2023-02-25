@@ -8,6 +8,7 @@
     "dist",
     "README.md"
   ],
+  "repository": "github:krouw/clregions",
   "keywords": [
     "cl",
     "chile",
@@ -20,6 +21,7 @@
   ],
   "scripts": {
     "lint": "eslint --ext .js,.ts src",
+    "docs": "typedoc --options typedoc.json",
     "generate": "ts-node ./scripts/generate.ts",
     "test": "vitest",
     "coverage": "vitest run --coverage",
@@ -29,17 +31,19 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.53.0",
-    "@typescript-eslint/parser": "^5.53.0",
-    "eslint": "^8.34.0",
     "@changesets/cli": "^2.26.0",
     "@clregions/data": "workspace:*",
     "@clregions/tsconfig": "workspace:*",
     "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
     "@vitest/coverage-c8": "^0.28.4",
     "changeset": "^0.2.6",
+    "eslint": "^8.34.0",
     "ts-node": "^10.9.1",
     "tsup": "^6.6.2",
+    "typedoc": "^0.23.25",
+    "typedoc-plugin-markdown": "^3.14.0",
     "typescript": "^4.9.5",
     "vitest": "^0.28.4"
   }

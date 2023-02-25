@@ -1,6 +1,12 @@
 {
   "version": "0.1.0",
   "description": "Chilean (CL) regions, provinces and communes",
+  "repository": "github:krouw/clregions",
   "keywords": ["cl", "chile", "regions", "provinces", "communes", "regiones", "provincias", "comunas"],
   "license": "MIT"
 }
+
+
+  
+
+

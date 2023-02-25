@@ -2,7 +2,11 @@ import { CLRegion, CLProvince, CLCommune } from "./base-types";
 import { RegionId, ProvinceId, CommuneId } from "./generate-types";
 import { _clLocationData } from "./generate-data";
 
-export const getAllRegions = () => _clLocationData.regions;
+/**
+ * This comment _supports_ [Markdown](https://marked.js.org/)
+ */
+export const getAllRegions = (): Record<string, CLRegion> =>
+  _clLocationData.regions;
 
 export const getRegionById = (regionId: RegionId): CLRegion | null =>
   _clLocationData.regions[regionId] ? _clLocationData.regions[regionId] : null;
