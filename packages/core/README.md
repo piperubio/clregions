@@ -83,7 +83,7 @@ const communes = getAllCommunes();
 ```ts
 import { getCommuneById } from '@clregions/core';
 
-const commune = getCommuneById('01101');
+const commune: CLCommune | null = getCommuneById('01101');
 ```
 
 
