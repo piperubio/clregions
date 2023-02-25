@@ -44,7 +44,7 @@ export const getAllCommunesByRegion = (
     );
 };
 
-export const getAllProvinces = (): Record<string, CLProvince> | null =>
+export const getAllProvinces = (): Record<string, CLProvince> =>
   Object.values(_clLocationData.regions)
     .map((region) => Object.entries(region.provinces))
     .flat()
@@ -89,7 +89,7 @@ export const getAllCommunesByProvince = (
   }
 };
 
-export const getAllCommunes = (): Record<string, CLCommune> | null =>
+export const getAllCommunes = (): Record<string, CLCommune> =>
   Object.values(_clLocationData.regions)
     .map((region) => Object.values(region.provinces))
     .flat()

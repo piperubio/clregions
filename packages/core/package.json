@@ -8,7 +8,18 @@
     "dist",
     "README.md"
   ],
+  "keywords": [
+    "cl",
+    "chile",
+    "regions",
+    "provinces",
+    "communes",
+    "regiones",
+    "provincias",
+    "comunas"
+  ],
   "scripts": {
+    "lint": "eslint --ext .js,.ts src",
     "generate": "ts-node ./scripts/generate.ts",
     "test": "vitest",
     "coverage": "vitest run --coverage",
@@ -26,5 +37,10 @@
     "tsup": "^6.6.2",
     "typescript": "^4.9.5",
     "vitest": "^0.28.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.34.0"
   }
 }
