@@ -2,6 +2,7 @@
   "name": "@clregions/tsconfig",
   "version": "0.1.0",
   "private": false,
+  "repository": "github:piperubio/clregions",
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3"
   }
