@@ -1,5 +1,12 @@
 # @clregions/core
 
+## 0.1.7
+
+### Patch Changes
+
+- Version fix npm package
+- Improve Readme
+
 ## 0.1.6
 
 ### Patch Changes
