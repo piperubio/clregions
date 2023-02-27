@@ -20,6 +20,7 @@
 
 🛡️ Pull Request bienvenidos!! Siéntete libre de contribuir con la librería, cualquier ayuda es bienvenida.
 
+☕ Si tienes alguna idea de como mejorar nuestra API, abre una discusión y conversemos!
 
 ## Instalación
 
@@ -58,6 +59,21 @@ import { getRegionById } from '@clregions/core';
 const region: CLRegion | null = getRegionById('13');
 ```
 
+
+## Obtener todas las provincias de una región
+
+```ts
+import { getAllProvincesByRegion } from '@clregions/core';
+const provinces: Record<string, CLProvince> | null = getAllProvincesByRegion('13');
+```
+
+## Obtener todas las comunas de una región
+
+```ts
+import { getAllCommunesByRegion } from '@clregions/core';
+const communes: Record<string, CLCommune> | null = getAllCommunesByRegion('13');
+```
+
 ## Obtener todas las provincias
 
 ```ts
@@ -74,6 +90,12 @@ import { getProvinceById } from '@clregions/core';
 const province: CLProvince | null = getProvinceById('011');
 ```
 
+## Obtener todas las comunas de una provincia
+
+```ts
+import { getAllCommunesByProvince } from '@clregions/core';
+const communes: Record<string, CLCommune> | null = getAllCommunesByProvince('011');
+```
 ## Obtener todas las comunas
 
 ```ts
