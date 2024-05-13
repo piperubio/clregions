@@ -8,7 +8,6 @@ export type CLCountry = {
 export type CLRegion = {
   id: string;
   name: string;
-  capital_region: string;
   iso_code: string;
   provinces: {
     [key: string]: CLProvince;
@@ -18,7 +17,6 @@ export type CLRegion = {
 export type CLProvince = {
   id: string;
   name: string;
-  provincial_capital: string;
   communes: {
     [key: string]: CLCommune;
   };
