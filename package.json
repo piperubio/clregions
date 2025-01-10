@@ -1,7 +1,23 @@
 {
+  "name": "clregions",
   "version": "0.1.0",
   "description": "Chilean (CL) regions, provinces and communes",
   "repository": "github:piperubio/clregions",
-  "keywords": ["cl", "chile", "regions", "provinces", "communes", "regiones", "provincias", "comunas"],
-  "license": "MIT"
+  "keywords": [
+    "cl",
+    "chile",
+    "regions",
+    "provinces",
+    "communes",
+    "regiones",
+    "provincias",
+    "comunas"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
 }

@@ -1,0 +1,15 @@
+{
+	"recommendations": [
+		"biomejs.biome",
+		"ms-python.autopep8",
+		"denoland.vscode-deno",
+		"github.copilot",
+		"github.copilot-chat",
+		"ms-python.vscode-pylance",
+		"ms-python.python",
+		"ms-python.debugpy",
+		"ms-toolsai.jupyter",
+		"mechatroner.rainbow-csv",
+		"charliermarsh.ruff"
+	]
+}

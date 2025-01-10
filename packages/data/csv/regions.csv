@@ -1,0 +1,17 @@
+id,name,short_name,abbreviation,iso_code
+01,Región de Tarapacá,Tarapacá,TPCA,CL-TA
+02,Región de Antofagasta,Antofagasta,ANTOF,CL-AN
+03,Región de Atacama,Atacama,ATCMA,CL-AT
+04,Región de Coquimbo,Coquimbo,COQ,CL-CO
+05,Región de Valparaíso,Valparaíso,VALPO,CL-VS
+06,Región del Libertador General Bernardo O'Higgins,Libertador General Bernardo O'Higgins,LGBO,CL-LI
+07,Región del Maule,Maule,MAULE,CL-ML
+08,Región del Biobío,Biobío,BBIO,CL-BI
+09,Región de La Araucanía,La Araucanía,ARAUC,CL-AR
+10,Región de Los Lagos,Los Lagos,LAGOS,CL-LL
+11,Región Aysén del General Carlos Ibáñez del Campo,Aysén del General Carlos Ibáñez del Campo,AYSEN,CL-AI
+12,Región de Magallanes y de la Antártica Chilena,Magallanes y de la Antártica Chilena,MAG,CL-MA
+13,Región Metropolitana de Santiago,Metropolitana de Santiago,RM,CL-RM
+14,Región de Los Ríos,Los Ríos,RIOS,CL-LR
+15,Región de Arica y Parinacota,Arica y Parinacota,AyP,CL-AP
+16,Región de Ñuble,Ñuble,NUBLE,CL-NB

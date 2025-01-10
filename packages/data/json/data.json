@@ -1,10 +1,11 @@
 {
   "country": "Chile",
-  "iso_code": "CL",
   "regions": {
     "01": {
       "id": "01",
-      "name": "Tarapacá",
+      "name": "Región de Tarapacá",
+      "short_name": "Tarapacá",
+      "abbreviation": "TPCA",
       "iso_code": "CL-TA",
       "provinces": {
         "011": {
@@ -51,7 +52,9 @@
     },
     "02": {
       "id": "02",
-      "name": "Antofagasta",
+      "name": "Región de Antofagasta",
+      "short_name": "Antofagasta",
+      "abbreviation": "ANTOF",
       "iso_code": "CL-AN",
       "provinces": {
         "021": {
@@ -112,7 +115,9 @@
     },
     "03": {
       "id": "03",
-      "name": "Atacama",
+      "name": "Región de Atacama",
+      "short_name": "Atacama",
+      "abbreviation": "ATCMA",
       "iso_code": "CL-AT",
       "provinces": {
         "031": {
@@ -173,7 +178,9 @@
     },
     "04": {
       "id": "04",
-      "name": "Coquimbo",
+      "name": "Región de Coquimbo",
+      "short_name": "Coquimbo",
+      "abbreviation": "COQ",
       "iso_code": "CL-CO",
       "provinces": {
         "041": {
@@ -258,7 +265,9 @@
     },
     "05": {
       "id": "05",
-      "name": "Valparaíso",
+      "name": "Región de Valparaíso",
+      "short_name": "Valparaíso",
+      "abbreviation": "VALPO",
       "iso_code": "CL-VS",
       "provinces": {
         "051": {
@@ -465,7 +474,9 @@
     },
     "06": {
       "id": "06",
-      "name": "Libertador General Bernardo O'Higgins",
+      "name": "Región del Libertador General Bernardo O'Higgins",
+      "short_name": "Libertador General Bernardo O'Higgins",
+      "abbreviation": "LGBO",
       "iso_code": "CL-LI",
       "provinces": {
         "061": {
@@ -622,7 +633,9 @@
     },
     "07": {
       "id": "07",
-      "name": "Maule",
+      "name": "Región del Maule",
+      "short_name": "Maule",
+      "abbreviation": "MAULE",
       "iso_code": "CL-ML",
       "provinces": {
         "071": {
@@ -773,7 +786,9 @@
     },
     "08": {
       "id": "08",
-      "name": "Biobío",
+      "name": "Región del Biobío",
+      "short_name": "Biobío",
+      "abbreviation": "BBIO",
       "iso_code": "CL-BI",
       "provinces": {
         "081": {
@@ -930,7 +945,9 @@
     },
     "09": {
       "id": "09",
-      "name": "La Araucanía",
+      "name": "Región de La Araucanía",
+      "short_name": "La Araucanía",
+      "abbreviation": "ARAUC",
       "iso_code": "CL-AR",
       "provinces": {
         "091": {
@@ -1077,7 +1094,9 @@
     },
     "10": {
       "id": "10",
-      "name": "Los Lagos",
+      "name": "Región de Los Lagos",
+      "short_name": "Los Lagos",
+      "abbreviation": "LAGOS",
       "iso_code": "CL-LL",
       "provinces": {
         "101": {
@@ -1228,7 +1247,9 @@
     },
     "11": {
       "id": "11",
-      "name": "Aysén del General Carlos Ibáñez del Campo",
+      "name": "Región Aysén del General Carlos Ibáñez del Campo",
+      "short_name": "Aysén del General Carlos Ibáñez del Campo",
+      "abbreviation": "AYSEN",
       "iso_code": "CL-AI",
       "provinces": {
         "111": {
@@ -1299,7 +1320,9 @@
     },
     "12": {
       "id": "12",
-      "name": "Magallanes y de la Antártica Chilena",
+      "name": "Región de Magallanes y de la Antártica Chilena",
+      "short_name": "Magallanes y de la Antártica Chilena",
+      "abbreviation": "MAG",
       "iso_code": "CL-MA",
       "provinces": {
         "121": {
@@ -1374,7 +1397,9 @@
     },
     "13": {
       "id": "13",
-      "name": "Metropolitana de Santiago",
+      "name": "Región Metropolitana de Santiago",
+      "short_name": "Metropolitana de Santiago",
+      "abbreviation": "RM",
       "iso_code": "CL-RM",
       "provinces": {
         "131": {
@@ -1625,7 +1650,9 @@
     },
     "14": {
       "id": "14",
-      "name": "Los Ríos",
+      "name": "Región de Los Ríos",
+      "short_name": "Los Ríos",
+      "abbreviation": "RIOS",
       "iso_code": "CL-LR",
       "provinces": {
         "141": {
@@ -1692,7 +1719,9 @@
     },
     "15": {
       "id": "15",
-      "name": "Arica y Parinacota",
+      "name": "Región de Arica y Parinacota",
+      "short_name": "Arica y Parinacota",
+      "abbreviation": "AyP",
       "iso_code": "CL-AP",
       "provinces": {
         "151": {
@@ -1727,7 +1756,9 @@
     },
     "16": {
       "id": "16",
-      "name": "Ñuble",
+      "name": "Región de Ñuble",
+      "short_name": "Ñuble",
+      "abbreviation": "NUBLE",
       "iso_code": "CL-NB",
       "provinces": {
         "161": {

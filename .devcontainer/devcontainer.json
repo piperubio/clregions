@@ -18,7 +18,24 @@
 		}
 	},
   // Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pnpm install"
+	"postCreateCommand": "pnpm install",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"biomejs.biome",
+				"ms-python.autopep8",
+				"denoland.vscode-deno",
+				"github.copilot",
+				"github.copilot-chat",
+				"ms-python.vscode-pylance",
+				"ms-python.python",
+				"ms-python.debugpy",
+				"ms-toolsai.jupyter",
+				"mechatroner.rainbow-csv",
+				"charliermarsh.ruff"
+			]
+		}
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
