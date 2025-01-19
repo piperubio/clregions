@@ -8,19 +8,42 @@ Datos en formato csv, json y sql.
 
 🛡️ Si encuentras alguna discordancia en los datos, no dudes enviarnos un pull request.
 
-## Requisitos
+## Uso JS/TS
+
+### Instalación
+
+```bash
+npm install @clregions/data
+```
+
+### Uso
+
+* `dataObject` contiene los datos en formato de objeto.
+
+```javascript
+import { dataObject } from '@clregions/data';
+```
+* `dataArray` contiene los datos en formato de array.
+
+```javascript
+import { dataArray } from '@clregions/data';
+```
+
+## Desarrollo
+
+### Requisitos
 
 - Python 3.12 o superior
 - [uv package manager](https://docs.astral.sh/uv/) 
 
-## Instalación de dependencias
+### Instalación de dependencias
 
 ```bash
 uv venv
 uv sync
 ```
 
-### Fuentes de Datos
+## Fuentes de Datos
 
 [BCN Ley 21.074 2018](https://www.bcn.cl/leychile/navegar?idNorma=1115064)
 [BCN Decreto 1115 del Ministerio del Interior y Seguridad Pública 2018](https://www.bcn.cl/leychile/navegar?idNorma=1123248)

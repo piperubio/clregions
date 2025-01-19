@@ -4,14 +4,19 @@
     "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
     "type": "module",
     "main": "dist/index.js",
-    "types": "dist/index.d.ts",
     "homepage": "https://github.com/piperubio/clregions",
     "bugs": {
         "url": "https://github.com/piperubio/clregions/issues"
     },
     "repository": "github:piperubio/clregions",
     "scripts": {
-        "build": "tsup index.ts"
+        "build": "tsup index.ts --format esm --dts",
+        "format": "biome format --write *.ts",
+        "check": "biome check  *.ts",
+        "lint": "tsc",
+        "clean": "rm -rf dist",
+        "ci": "npm run clean && npm run build && npm run check && npm run check-exports && npm run lint",
+        "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
     },
     "keywords": [
         "chile",
@@ -30,9 +35,10 @@
         "typescript": "^5.7.3"
     },
     "files": [
-        "dist"
+        "dist/*"
     ],
     "devDependencies": {
-        "@clregions/tsconfig": "^1.0.0"
+        "@arethetypeswrong/cli": "^0.17.3",
+        "@clregions/tsconfig": "workspace:*"
     }
 }
