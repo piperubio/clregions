@@ -1,5 +1,0 @@
----
-"@clregions/tsconfig": major
----
-
-tst
