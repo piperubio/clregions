@@ -20,3 +20,11 @@
     - CLCommune
 
   The package is now available on npm as @clregions/data
+
+## 0.1.0
+
+### Minor Changes
+
+- ed92ca4: Add data for Chile's regions, provinces and communes. Minor changes include:
+
+    - JSON file as object
