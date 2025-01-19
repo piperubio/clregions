@@ -1,7 +1,7 @@
 # @clregions/tsconfig
 
-## 2.0.0
+## 1.0.0
 
 ### Major Changes
 
-- 86ad795: tst
+- 5d62bb8: Update tsconfig for nodejs v20
