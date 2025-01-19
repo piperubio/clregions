@@ -1,10 +1,10 @@
 
 CREATE TABLE region (
-  id VARCHAR(2) PRIMARY KEY,
-  name VARCHAR(255),
-  short_name VARCHAR(255),
-  abbreviation VARCHAR(10),
-  iso_code VARCHAR(10)
+    id VARCHAR(2) PRIMARY KEY,
+    name VARCHAR(255),
+    short_name VARCHAR(255),
+    abbreviation VARCHAR(10),
+    iso_code VARCHAR(10)
 );
 
 INSERT INTO region (id, name, short_name, abbreviation, iso_code) VALUES ('01', 'Región de Tarapacá', 'Tarapacá', 'TPCA', 'CL-TA');
