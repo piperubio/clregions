@@ -32,7 +32,8 @@
 				"ms-python.debugpy",
 				"ms-toolsai.jupyter",
 				"mechatroner.rainbow-csv",
-				"charliermarsh.ruff"
+				"charliermarsh.ruff",
+				"pflannery.vscode-versionlens"
 			]
 		}
 	}
