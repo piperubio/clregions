@@ -3,12 +3,15 @@
 		{
 			"path": "."
 		},
-    {
-      "path": "packages/data"
-    },
-    {
-      "path": "packages/core"
-    }
-  ],
-  "settings": {}
+		{
+			"path": "packages/tsconfig"
+		},
+		{
+			"path": "packages/data"
+		},
+		{
+			"path": "packages/core"
+		}
+	],
+	"settings": {}
 }

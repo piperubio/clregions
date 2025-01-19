@@ -1,9 +1,9 @@
 
 CREATE TABLE commune (
-  id VARCHAR(5) PRIMARY KEY,
-  name VARCHAR(255),
-  province_id VARCHAR(3),
-  FOREIGN KEY (province_id) REFERENCES province(id)
+    id VARCHAR(5) PRIMARY KEY,
+    name VARCHAR(255),
+    province_id VARCHAR(3),
+    FOREIGN KEY (province_id) REFERENCES province(id)
 );
 
 INSERT INTO commune (id, name, province_id) VALUES ('01101', 'Iquique', '011');

@@ -1,18 +1,44 @@
 {
-  "name": "@clregions/data",
-  "version": "0.1.0",
-  "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "repository": "github:piperubio/clregions",
-  "scripts": {
-    "build": "tsup index.ts data.json"
-  },
-  "keywords": [],
-  "author": "piperubio",
-  "license": "MIT",
-  "dependencies": {
-    "tsup": "^6.6.2",
-    "typescript": "^4.9.5"
-  }
+    "name": "@clregions/data",
+    "version": "1.0.0",
+    "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
+    "type": "module",
+    "main": "dist/index.js",
+    "homepage": "https://github.com/piperubio/clregions",
+    "bugs": {
+        "url": "https://github.com/piperubio/clregions/issues"
+    },
+    "repository": "github:piperubio/clregions",
+    "scripts": {
+        "build": "tsup index.ts --format esm --dts",
+        "format": "biome format --write *.ts",
+        "check": "biome check  *.ts",
+        "lint": "tsc",
+        "clean": "rm -rf dist",
+        "ci": "npm run clean && npm run build && npm run check && npm run check-exports && npm run lint",
+        "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
+    },
+    "keywords": [
+        "chile",
+        "regiones",
+        "provincias",
+        "comunas",
+        "data",
+        "json",
+        "csv",
+        "sql"
+    ],
+    "author": "piperubio",
+    "license": "MIT",
+    "dependencies": {
+        "tsup": "^8.3.5",
+        "typescript": "^5.7.3"
+    },
+    "files": [
+        "dist/*"
+    ],
+    "devDependencies": {
+        "@arethetypeswrong/cli": "^0.17.3",
+        "@clregions/tsconfig": "workspace:*"
+    }
 }

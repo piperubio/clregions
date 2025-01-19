@@ -1,9 +1,9 @@
 
 CREATE TABLE province (
-  id VARCHAR(3) PRIMARY KEY,
-  name VARCHAR(255),
-  region_id VARCHAR(2),
-  FOREIGN KEY (region_id) REFERENCES region(id)
+    id VARCHAR(3) PRIMARY KEY,
+    name VARCHAR(255),
+    region_id VARCHAR(2),
+    FOREIGN KEY (region_id) REFERENCES region(id)
 );
 
 INSERT INTO province (id, name, region_id) VALUES ('011', 'Iquique', '01');

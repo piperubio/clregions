@@ -1,9 +1,9 @@
 {
-  "name": "@clregions/tsconfig",
-  "version": "0.1.0",
-  "private": false,
-  "repository": "github:piperubio/clregions",
-  "devDependencies": {
-    "@tsconfig/node16": "^1.0.3"
-  }
+	"name": "@clregions/tsconfig",
+	"version": "1.0.0",
+	"private": false,
+	"repository": "github:piperubio/clregions",
+	"devDependencies": {
+		"@tsconfig/node20": "^20.1.4"
+	}
 }
