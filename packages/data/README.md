@@ -29,6 +29,11 @@ import { dataObject } from '@clregions/data';
 import { dataArray } from '@clregions/data';
 ```
 
+> [!WARNING]  
+> Los datos contenidos en el paquete @clregions/data son mutables, por lo que se recomienda no modificarlos directamente.
+> Para un uso seguro te recomendamos nuestra librería @clregions/core.
+> Para proyectos de Frontend te recomendamos usar un bundler como Vite o Webpack.  
+
 ## Desarrollo
 
 ### Requisitos
