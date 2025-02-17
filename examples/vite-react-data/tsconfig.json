@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "checkJs": true,
+    "allowJs": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src/**/*.js", "src/**/*.jsx"],
+}

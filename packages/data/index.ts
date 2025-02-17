@@ -54,5 +54,7 @@ export type CLCommune = {
 	name: string;
 };
 
-export const dataObject: CLCountryObject = object;
-export const dataArray: CLCountryArray = array;
+const dataObject: CLCountryObject = object;
+const dataArray: CLCountryArray = array;
+
+export { dataObject, dataArray };
