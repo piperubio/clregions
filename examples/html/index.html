@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CL Regions HTML Example</title>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+
+<script type="module">
+    import { regions, provinces, communes } from "http://localhost:8000/array/index.js";
+    const app = document.getElementById('app');
+    const check = "Región de Tarapacá" === regions[0].name;
+    console.log(check);
+    const template = `
+    <h1>Regiones</h1>
+    ${regions.map(region => {
+        return `<div>${region.name}</div>`;
+    }).join('')}
+    <h1>Provincias</h1>
+    ${provinces.map(province => {
+        return `<div>${province.name}</div>`;
+    }).join('')}
+
+    <h1>Comunas</h1>
+
+    ${communes.map(commune => {
+        return `<div>${commune.name}</div>`;
+    }).join('')}
+    `;
+    app.innerHTML = template;
+</script>
+
+</html>
