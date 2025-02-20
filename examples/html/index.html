@@ -8,31 +8,11 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <h1>CL Regions Plain HTML Examples</h1>
+    <ul>
+        <li><a href="array.html">Usage of Array Data Example</a></li>
+        <li><a href="object.html">Usage of Object Data Example</a></li>
+    </ul>
 </body>
-
-<script type="module">
-    import { regions, provinces, communes } from "https://unpkg.com/@clregions/data@1.0.0-next.1/dist/array/index.js";
-    const app = document.getElementById('app');
-    const check = "Región de Tarapacá" === regions[0].name;
-    console.log(check);
-    const template = `
-    <h1>Regiones</h1>
-    ${regions.map(region => {
-        return `<div>${region.name}</div>`;
-    }).join('')}
-    <h1>Provincias</h1>
-    ${provinces.map(province => {
-        return `<div>${province.name}</div>`;
-    }).join('')}
-
-    <h1>Comunas</h1>
-
-    ${communes.map(commune => {
-        return `<div>${commune.name}</div>`;
-    }).join('')}
-    `;
-    app.innerHTML = template;
-</script>
 
 </html>

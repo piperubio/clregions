@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CL Regions Array Data Usage in HTML</title>
+</head>
+
+<body>
+    <h1>CL Regions Array Data Usage in plain HTML</h1>
+    <div id="app"></div>
+</body>
+
+<script type="module">
+    import { regions, provinces, communes } from "https://unpkg.com/@clregions/data@1.0.0-next.1/dist/array/index.js";
+    const app = document.getElementById('app');
+    const check = "Región de Tarapacá" === regions[0].name;
+    if (!check) {
+        throw new Error('Invalid data comparison');
+    }
+    const template = `
+    <h2>Regions</h2>
+    ${regions.map(region => {
+        return `<div>${region.name}</div>`;
+    }).join('')}
+    <h2>Provinces</h2>
+    ${provinces.map(province => {
+        return `<div>${province.name}</div>`;
+    }).join('')}
+
+    <h2>Communes</h2>
+
+    ${communes.map(commune => {
+        return `<div>${commune.name}</div>`;
+    }).join('')}
+    `;
+    app.innerHTML = template;
+</script>
+
+</html>
