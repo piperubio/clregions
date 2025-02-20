@@ -1,6 +1,6 @@
 {
     "name": "@clregions/data",
-    "version": "1.0.0-next.1",
+    "version": "1.0.0-next.2",
     "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
     "type": "module",
     "main": "./dist/object/index.js",
