@@ -1,22 +1,10 @@
 # @clregions/data
 
-## 1.0.0
-
-### Major Changes
-
-- 16b0cdb: CL Regions Data pre-release with object and array implementations
-
 ## 1.0.0-next.1
 
 ### Major Changes
 
 - 16b0cdb: CL Regions Data pre-release with object and array implementations
-
-## 1.0.0-next.0
-
-### Major Changes
-
-- 918d408: ClRegions Data prerelease v1 with object and array implementations
 
 ## 1.0.0
 

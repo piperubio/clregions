@@ -1,6 +1,6 @@
 {
     "name": "@clregions/data",
-    "version": "1.0.0",
+    "version": "1.0.0-next.1",
     "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
     "type": "module",
     "main": "./dist/object/index.js",
@@ -36,14 +36,12 @@
     ],
     "author": "piperubio",
     "license": "MIT",
-    "dependencies": {
-        "tsup": "^8.3.5",
-        "typescript": "^5.7.3"
-    },
     "files": [
         "dist/*"
     ],
     "devDependencies": {
+        "tsup": "^8.3.5",
+        "typescript": "^5.7.3",
         "@arethetypeswrong/cli": "^0.17.3",
         "@clregions/tsconfig": "workspace:*"
     }
