@@ -50,7 +50,7 @@ console.log(regions[0].name);
 ### Uso vía unpkg en proyectos de navegador
 ```html
 <script type="module">
-  import { regions } from "https://unpkg.com/@clregions/data@1.0.0-next.1/dist/array/index.js";
+  import { regions } from "https://unpkg.com/@clregions/data/dist/array/index.js";
   console.log(regions[0].name);
 </script>
 ```
