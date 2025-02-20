@@ -1,18 +1,24 @@
 {
     "name": "@clregions/data",
-    "version": "1.0.0",
+    "version": "1.0.0-next.1",
     "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
     "type": "module",
-    "main": "dist/index.js",
+    "main": "./dist/object/index.js",
+    "types": "./dist/object/index.d.ts",
+    "exports": {
+        ".": "./dist/object/index.js",
+        "./object": "./dist/object/index.js",
+        "./array": "./dist/array/index.js"
+    },
     "homepage": "https://github.com/piperubio/clregions",
     "bugs": {
         "url": "https://github.com/piperubio/clregions/issues"
     },
     "repository": "github:piperubio/clregions",
     "scripts": {
-        "build": "tsup index.ts --format esm --dts",
-        "format": "biome format --write *.ts",
-        "check": "biome check  *.ts",
+        "build": "tsup",
+        "format": "biome format --write ts/**/*.ts",
+        "check": "biome check  ts/**/*.ts",
         "lint": "tsc",
         "clean": "rm -rf dist",
         "ci": "npm run clean && npm run build && npm run check && npm run check-exports && npm run lint",
@@ -30,14 +36,12 @@
     ],
     "author": "piperubio",
     "license": "MIT",
-    "dependencies": {
-        "tsup": "^8.3.5",
-        "typescript": "^5.7.3"
-    },
     "files": [
         "dist/*"
     ],
     "devDependencies": {
+        "tsup": "^8.3.5",
+        "typescript": "^5.7.3",
         "@arethetypeswrong/cli": "^0.17.3",
         "@clregions/tsconfig": "workspace:*"
     }

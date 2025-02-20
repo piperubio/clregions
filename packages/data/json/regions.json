@@ -1,0 +1,114 @@
+[
+  {
+    "id": "01",
+    "name": "Región de Tarapacá",
+    "shortName": "Tarapacá",
+    "abbreviation": "TPCA",
+    "isoCode": "CL-TA"
+  },
+  {
+    "id": "02",
+    "name": "Región de Antofagasta",
+    "shortName": "Antofagasta",
+    "abbreviation": "ANTOF",
+    "isoCode": "CL-AN"
+  },
+  {
+    "id": "03",
+    "name": "Región de Atacama",
+    "shortName": "Atacama",
+    "abbreviation": "ATCMA",
+    "isoCode": "CL-AT"
+  },
+  {
+    "id": "04",
+    "name": "Región de Coquimbo",
+    "shortName": "Coquimbo",
+    "abbreviation": "COQ",
+    "isoCode": "CL-CO"
+  },
+  {
+    "id": "05",
+    "name": "Región de Valparaíso",
+    "shortName": "Valparaíso",
+    "abbreviation": "VALPO",
+    "isoCode": "CL-VS"
+  },
+  {
+    "id": "06",
+    "name": "Región del Libertador General Bernardo O'Higgins",
+    "shortName": "Libertador General Bernardo O'Higgins",
+    "abbreviation": "LGBO",
+    "isoCode": "CL-LI"
+  },
+  {
+    "id": "07",
+    "name": "Región del Maule",
+    "shortName": "Maule",
+    "abbreviation": "MAULE",
+    "isoCode": "CL-ML"
+  },
+  {
+    "id": "08",
+    "name": "Región del Biobío",
+    "shortName": "Biobío",
+    "abbreviation": "BBIO",
+    "isoCode": "CL-BI"
+  },
+  {
+    "id": "09",
+    "name": "Región de La Araucanía",
+    "shortName": "La Araucanía",
+    "abbreviation": "ARAUC",
+    "isoCode": "CL-AR"
+  },
+  {
+    "id": "10",
+    "name": "Región de Los Lagos",
+    "shortName": "Los Lagos",
+    "abbreviation": "LAGOS",
+    "isoCode": "CL-LL"
+  },
+  {
+    "id": "11",
+    "name": "Región Aysén del General Carlos Ibáñez del Campo",
+    "shortName": "Aysén del General Carlos Ibáñez del Campo",
+    "abbreviation": "AYSEN",
+    "isoCode": "CL-AI"
+  },
+  {
+    "id": "12",
+    "name": "Región de Magallanes y de la Antártica Chilena",
+    "shortName": "Magallanes y de la Antártica Chilena",
+    "abbreviation": "MAG",
+    "isoCode": "CL-MA"
+  },
+  {
+    "id": "13",
+    "name": "Región Metropolitana de Santiago",
+    "shortName": "Metropolitana de Santiago",
+    "abbreviation": "RM",
+    "isoCode": "CL-RM"
+  },
+  {
+    "id": "14",
+    "name": "Región de Los Ríos",
+    "shortName": "Los Ríos",
+    "abbreviation": "RIOS",
+    "isoCode": "CL-LR"
+  },
+  {
+    "id": "15",
+    "name": "Región de Arica y Parinacota",
+    "shortName": "Arica y Parinacota",
+    "abbreviation": "AyP",
+    "isoCode": "CL-AP"
+  },
+  {
+    "id": "16",
+    "name": "Región de Ñuble",
+    "shortName": "Ñuble",
+    "abbreviation": "NUBLE",
+    "isoCode": "CL-NB"
+  }
+]
