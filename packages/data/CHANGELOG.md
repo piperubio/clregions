@@ -1,11 +1,5 @@
 # @clregions/data
 
-## 1.0.0
-
-### Patch Changes
-
-- d1b741a: improve clregions/data docs
-
 ## 1.0.0-next.2
 
 ### Patch Changes
