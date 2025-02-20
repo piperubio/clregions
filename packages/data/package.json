@@ -25,15 +25,23 @@
         "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
     },
     "keywords": [
+        "cl",
         "chile",
+        "regions",
+        "provinces",
+        "communes",
         "regiones",
         "provincias",
         "comunas",
-        "data",
-        "json",
+        "npm",
+        "typescript",
+        "javascript",
+        "ts",
+        "js",
         "csv",
+        "json",
         "sql"
-    ],
+      ],
     "author": "piperubio",
     "license": "MIT",
     "files": [
