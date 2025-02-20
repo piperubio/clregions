@@ -1,5 +1,11 @@
 # @clregions/data
 
+## 1.0.0-next.3
+
+### Patch Changes
+
+- 765bb8e: ClRegions Data Prerelease 2
+
 ## 1.0.0-next.2
 
 ### Patch Changes
