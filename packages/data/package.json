@@ -1,6 +1,6 @@
 {
     "name": "@clregions/data",
-    "version": "1.0.0",
+    "version": "1.0.0.alpha.1",
     "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
     "type": "module",
     "main": "./dist/object/index.js",
@@ -17,8 +17,8 @@
     "repository": "github:piperubio/clregions",
     "scripts": {
         "build": "tsup",
-        "format": "biome format --write *.ts",
-        "check": "biome check  *.ts",
+        "format": "biome format --write ts/**/*.ts",
+        "check": "biome check  ts/**/*.ts",
         "lint": "tsc",
         "clean": "rm -rf dist",
         "ci": "npm run clean && npm run build && npm run check && npm run check-exports && npm run lint",
