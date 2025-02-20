@@ -1,5 +1,12 @@
 # node
 
+## 0.1.1-next.0
+
+### Patch Changes
+
+- Updated dependencies [16b0cdb]
+  - @clregions/data@1.0.0-next.1
+
 ## 1.0.1-next.0
 
 ### Patch Changes

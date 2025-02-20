@@ -1,7 +1,7 @@
 {
-  "name": "vite-data",
+  "name": "vite",
   "private": true,
-  "version": "0.0.1-next.0",
+  "version": "0.1.1-next.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +12,6 @@
     "@clregions/data": "workspace:*"
   },
   "devDependencies": {
-    "vite": "^6.1.0"
+    "vite": "^0.1.1-next.0"
   }
 }
