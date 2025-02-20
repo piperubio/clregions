@@ -1,0 +1,14 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "node-clregions": "0.1.1",
+    "vite-clregions": "0.1.1",
+    "@clregions/core": "0.1.7",
+    "@clregions/data": "1.0.0-next.2",
+    "@clregions/tsconfig": "1.0.0"
+  },
+  "changesets": [
+    "wild-fishes-live"
+  ]
+}

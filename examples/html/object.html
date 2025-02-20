@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CL Regions Object Data Usage in HTML</title>
+</head>
+
+<body>
+    <h1>CL Regions Object Data Usage in plain HTML</h1>
+    <div id="app"></div>
+</body>
+
+<script type="module">
+    import { clRegions } from "https://unpkg.com/@clregions/data@1.0.0-next.1/dist/object/index.js";
+    const app = document.getElementById('app');
+    const check = "Región de Tarapacá" === clRegions.regions["01"].name;
+    if (!check) {
+        throw new Error('Invalid data comparison');
+    }
+    const template = `
+    <ol>
+      ${Object.values(clRegions.regions)
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map(region => `
+        <li>${region.name}
+          <ol>
+            ${Object.values(region.provinces)
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map(province => `
+              <li>${province.name}
+                <ol>
+                  ${Object.values(province.communes)
+                    .sort((a, b) => a.name.localeCompare(b.name))
+                    .map(commune => `<li>${commune.name}</li>`)
+                    .join('')}
+                </ol>
+              </li>`)
+              .join('')}
+          </ol>
+        </li>`)
+        .join('')}
+    </ol>
+    `;
+    app.innerHTML = template;
+</script>
+
+</html>

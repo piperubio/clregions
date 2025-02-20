@@ -1,6 +1,6 @@
 {
     "name": "@clregions/data",
-    "version": "1.0.0-next.1",
+    "version": "1.0.0-next.3",
     "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
     "type": "module",
     "main": "./dist/object/index.js",
@@ -25,15 +25,23 @@
         "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
     },
     "keywords": [
+        "cl",
         "chile",
+        "regions",
+        "provinces",
+        "communes",
         "regiones",
         "provincias",
         "comunas",
-        "data",
-        "json",
+        "npm",
+        "typescript",
+        "javascript",
+        "ts",
+        "js",
         "csv",
+        "json",
         "sql"
-    ],
+      ],
     "author": "piperubio",
     "license": "MIT",
     "files": [
