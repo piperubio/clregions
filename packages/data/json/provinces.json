@@ -1,0 +1,282 @@
+[
+  {
+    "id": "011",
+    "name": "Iquique",
+    "regionId": "01"
+  },
+  {
+    "id": "014",
+    "name": "Tamarugal",
+    "regionId": "01"
+  },
+  {
+    "id": "021",
+    "name": "Antofagasta",
+    "regionId": "02"
+  },
+  {
+    "id": "022",
+    "name": "El Loa",
+    "regionId": "02"
+  },
+  {
+    "id": "023",
+    "name": "Tocopilla",
+    "regionId": "02"
+  },
+  {
+    "id": "031",
+    "name": "Copiapó",
+    "regionId": "03"
+  },
+  {
+    "id": "032",
+    "name": "Chañaral",
+    "regionId": "03"
+  },
+  {
+    "id": "033",
+    "name": "Huasco",
+    "regionId": "03"
+  },
+  {
+    "id": "041",
+    "name": "Elqui",
+    "regionId": "04"
+  },
+  {
+    "id": "042",
+    "name": "Choapa",
+    "regionId": "04"
+  },
+  {
+    "id": "043",
+    "name": "Limarí",
+    "regionId": "04"
+  },
+  {
+    "id": "051",
+    "name": "Valparaíso",
+    "regionId": "05"
+  },
+  {
+    "id": "052",
+    "name": "Isla de Pascua",
+    "regionId": "05"
+  },
+  {
+    "id": "053",
+    "name": "Los Andes",
+    "regionId": "05"
+  },
+  {
+    "id": "054",
+    "name": "Petorca",
+    "regionId": "05"
+  },
+  {
+    "id": "055",
+    "name": "Quillota",
+    "regionId": "05"
+  },
+  {
+    "id": "056",
+    "name": "San Antonio",
+    "regionId": "05"
+  },
+  {
+    "id": "057",
+    "name": "San Felipe de Aconcagua",
+    "regionId": "05"
+  },
+  {
+    "id": "058",
+    "name": "Marga Marga",
+    "regionId": "05"
+  },
+  {
+    "id": "061",
+    "name": "Cachapoal",
+    "regionId": "06"
+  },
+  {
+    "id": "062",
+    "name": "Cardenal Caro",
+    "regionId": "06"
+  },
+  {
+    "id": "063",
+    "name": "Colchagua",
+    "regionId": "06"
+  },
+  {
+    "id": "071",
+    "name": "Talca",
+    "regionId": "07"
+  },
+  {
+    "id": "072",
+    "name": "Cauquenes",
+    "regionId": "07"
+  },
+  {
+    "id": "073",
+    "name": "Curicó",
+    "regionId": "07"
+  },
+  {
+    "id": "074",
+    "name": "Linares",
+    "regionId": "07"
+  },
+  {
+    "id": "081",
+    "name": "Concepción",
+    "regionId": "08"
+  },
+  {
+    "id": "082",
+    "name": "Arauco",
+    "regionId": "08"
+  },
+  {
+    "id": "083",
+    "name": "Biobío",
+    "regionId": "08"
+  },
+  {
+    "id": "091",
+    "name": "Cautín",
+    "regionId": "09"
+  },
+  {
+    "id": "092",
+    "name": "Malleco",
+    "regionId": "09"
+  },
+  {
+    "id": "101",
+    "name": "Llanquihue",
+    "regionId": "10"
+  },
+  {
+    "id": "102",
+    "name": "Chiloé",
+    "regionId": "10"
+  },
+  {
+    "id": "103",
+    "name": "Osorno",
+    "regionId": "10"
+  },
+  {
+    "id": "104",
+    "name": "Palena",
+    "regionId": "10"
+  },
+  {
+    "id": "111",
+    "name": "Coyhaique",
+    "regionId": "11"
+  },
+  {
+    "id": "112",
+    "name": "Aysén",
+    "regionId": "11"
+  },
+  {
+    "id": "113",
+    "name": "Capitán Prat",
+    "regionId": "11"
+  },
+  {
+    "id": "114",
+    "name": "General Carrera",
+    "regionId": "11"
+  },
+  {
+    "id": "121",
+    "name": "Magallanes",
+    "regionId": "12"
+  },
+  {
+    "id": "122",
+    "name": "Antártica Chilena",
+    "regionId": "12"
+  },
+  {
+    "id": "123",
+    "name": "Tierra del Fuego",
+    "regionId": "12"
+  },
+  {
+    "id": "124",
+    "name": "Última Esperanza",
+    "regionId": "12"
+  },
+  {
+    "id": "131",
+    "name": "Santiago",
+    "regionId": "13"
+  },
+  {
+    "id": "132",
+    "name": "Cordillera",
+    "regionId": "13"
+  },
+  {
+    "id": "133",
+    "name": "Chacabuco",
+    "regionId": "13"
+  },
+  {
+    "id": "134",
+    "name": "Maipo",
+    "regionId": "13"
+  },
+  {
+    "id": "135",
+    "name": "Melipilla",
+    "regionId": "13"
+  },
+  {
+    "id": "136",
+    "name": "Talagante",
+    "regionId": "13"
+  },
+  {
+    "id": "141",
+    "name": "Valdivia",
+    "regionId": "14"
+  },
+  {
+    "id": "142",
+    "name": "Ranco",
+    "regionId": "14"
+  },
+  {
+    "id": "151",
+    "name": "Arica",
+    "regionId": "15"
+  },
+  {
+    "id": "152",
+    "name": "Parinacota",
+    "regionId": "15"
+  },
+  {
+    "id": "161",
+    "name": "Diguillín",
+    "regionId": "16"
+  },
+  {
+    "id": "162",
+    "name": "Itata",
+    "regionId": "16"
+  },
+  {
+    "id": "163",
+    "name": "Punilla",
+    "regionId": "16"
+  }
+]

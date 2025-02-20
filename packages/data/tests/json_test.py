@@ -43,22 +43,53 @@ class TestJson(unittest.TestCase):
         self.assertTrue("shortName" in first_region)
         self.assertTrue("abbreviation" in first_region)
         self.assertTrue("isoCode" in first_region)
-        self.assertTrue("provinces" in first_region)
+        self.assertTrue(isinstance(first_region["provinces"], list))
         
-        # Verificar provincias
+        # Verificar provincias de la primera región
         first_province = first_region["provinces"][0]
         self.assertTrue("id" in first_province)
         self.assertTrue("name" in first_province)
-        self.assertTrue("communes" in first_province)
+        self.assertTrue(isinstance(first_province["communes"], list))
         
         # Verificar comunas
         first_commune = first_province["communes"][0]
         self.assertTrue("id" in first_commune)
         self.assertTrue("name" in first_commune)
 
-        # Verificar datos específicos de la primera región
+    def test_regions_array(self):
+        with open("json/regions.json") as f:
+            regions = json.load(f)
+        
+        self.assertTrue(isinstance(regions, list))
+        self.assertEqual(len(regions), 16)
+        
+        first_region = regions[0]
         self.assertEqual(first_region["id"], "01")
         self.assertEqual(first_region["name"], "Región de Tarapacá")
         self.assertEqual(first_region["shortName"], "Tarapacá")
         self.assertEqual(first_region["abbreviation"], "TPCA")
         self.assertEqual(first_region["isoCode"], "CL-TA")
+
+    def test_provinces_array(self):
+        with open("json/provinces.json") as f:
+            provinces = json.load(f)
+        
+        self.assertTrue(isinstance(provinces, list))
+        self.assertTrue(len(provinces) > 0)
+        
+        first_province = provinces[0]
+        self.assertTrue("id" in first_province)
+        self.assertTrue("name" in first_province)
+        self.assertTrue("regionId" in first_province)
+
+    def test_communes_array(self):
+        with open("json/communes.json") as f:
+            communes = json.load(f)
+        
+        self.assertTrue(isinstance(communes, list))
+        self.assertTrue(len(communes) > 0)
+        
+        first_commune = communes[0]
+        self.assertTrue("id" in first_commune)
+        self.assertTrue("name" in first_commune)
+        self.assertTrue("provinceId" in first_commune)

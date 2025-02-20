@@ -3,14 +3,20 @@
     "version": "1.0.0",
     "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
     "type": "module",
-    "main": "dist/index.js",
+    "main": "./dist/object/index.js",
+    "types": "./dist/object/index.d.ts",
+    "exports": {
+        ".": "./dist/object/index.js",
+        "./object": "./dist/object/index.js",
+        "./array": "./dist/array/index.js"
+    },
     "homepage": "https://github.com/piperubio/clregions",
     "bugs": {
         "url": "https://github.com/piperubio/clregions/issues"
     },
     "repository": "github:piperubio/clregions",
     "scripts": {
-        "build": "tsup index.ts --format esm --dts",
+        "build": "tsup",
         "format": "biome format --write *.ts",
         "check": "biome check  *.ts",
         "lint": "tsc",
