@@ -1,12 +1,6 @@
 # CL Regions Data
 
-CLRegions Data es un proyecto que busca unificar y mantener actualizados los datos territoriales de Chile en un solo lugar.
-Utilizamos fuentes oficiales y colaborativas para mantener estos datos actualizados y accesibles para la comunidad.
-Es un proyecto de python que genera los datos en formato csv, json, sql, además, estos datos los exportamos a un paquete npm para ser utilizados en proyectos de JavaScript/TypeScript.
-Mantengamos estos datos en comunidad, si encuentras alguna discordancia en los datos, no dudes en enviarnos un pull request.
-
-## Descripción
-CL Regions Data es un paquete de JavaScript y TypeScript que provee una estructura de datos organizada para facilitar la aplicación de lógica de negocio, evitando el uso exclusivo de datos planos (CSV, JSON, SQL). Cabe destacar que el repositorio de Python es el encargado de trabajar y generar dichos datos, mientras que este paquete de npm permite integrarlos de forma segura y tipada en proyectos JS/TS. Si no requieres un paquete npm, puedes trabajar directamente con los archivos CSV, JSON y SQL.
+CLRegions Data es un proyecto que unifica y mantiene actualizados los datos territoriales de Chile en un solo lugar. Este paquete de JavaScript y TypeScript provee una estructura de datos robusta y tipada, facilitando la integración de lógica de negocio sobre los datos de regiones, provincias y comunas. Los datos, generados mediante un repositorio de Python a partir de fuentes oficiales y colaborativas, se exportan en formatos CSV, JSON y SQL, y se encapsulan para uso seguro en proyectos web o Node.
 
 ## Objetivos
 - Proveer una estructura de datos robusta.
@@ -87,17 +81,17 @@ Si deseas contribuir, por favor sigue los siguientes pasos:
 
 ## Fuentes de Datos
 
-[BCN Ley 21.074 2018](https://www.bcn.cl/leychile/navegar?idNorma=1115064)
-[BCN Decreto 1115 del Ministerio del Interior y Seguridad Pública 2018](https://www.bcn.cl/leychile/navegar?idNorma=1123248)
-[BCN Sistema Integrado de Información Territorial (SIIT) Regiones de Chile](https://www.bcn.cl/siit/nuestropais/regiones)
-[BCN Sistema Integrado de Información Territorial (SIIT) Regiones, provincias y comunas de Chile](https://www.bcn.cl/siit/nuestropais_29_01_2021/regiones_provincias_comunas_bak.htm)
-[ISO 316 — Codes for the representation of names of countries and their subdivisions](https://www.iso.org/obp/ui/#iso:code:3166:CL)
-[Observatorio Logístico MAESTRO Códigos Únicos Territoriales - Actualizado al 2018](https://datos.observatoriologistico.cl/dataviews/262940/maestro-codigos-unicos-territoriales-actualizado-al-2018/)
-[Observatorio Logístico Provincias por Región](https://datos.observatoriologistico.cl/dataviews/244278/provincias-por-region/)
-[Observatorio Logístico Comunas por Región](https://datos.observatoriologistico.cl/dataviews/244276/comunas-por-region/)
-[WikiPedia Regiones de Chile](https://es.wikipedia.org/wiki/Regiones_de_Chile)
-[WikiPedia Provincias de Chile](https://es.wikipedia.org/wiki/Anexo:Provincias_de_Chile)
-[WikiPedia Comunas de Chile](https://es.wikipedia.org/wiki/Anexo:Comunas_de_Chile)
+[BCN Ley 21.074 2018](https://www.bcn.cl/leychile/navegar?idNorma=1115064)  
+[BCN Decreto 1115 del Ministerio del Interior y Seguridad Pública 2018](https://www.bcn.cl/leychile/navegar?idNorma=1123248)  
+[BCN Sistema Integrado de Información Territorial (SIIT) Regiones de Chile](https://www.bcn.cl/siit/nuestropais/regiones)  
+[BCN Sistema Integrado de Información Territorial (SIIT) Regiones, provincias y comunas de Chile](https://www.bcn.cl/siit/nuestropais_29_01_2021/regiones_provincias_comunas_bak.htm)  
+[ISO 316 — Codes for the representation of names of countries and their subdivisions](https://www.iso.org/obp/ui/#iso:code:3166:CL)  
+[Observatorio Logístico MAESTRO Códigos Únicos Territoriales - Actualizado al 2018](https://datos.observatoriologistico.cl/dataviews/262940/maestro-codigos-unicos-territoriales-actualizado-al-2018/)  
+[Observatorio Logístico Provincias por Región](https://datos.observatoriologistico.cl/dataviews/244278/provincias-por-region/)  
+[Observatorio Logístico Comunas por Región](https://datos.observatoriologistico.cl/dataviews/244276/comunas-por-region/)  
+[WikiPedia Regiones de Chile](https://es.wikipedia.org/wiki/Regiones_de_Chile)  
+[WikiPedia Provincias de Chile](https://es.wikipedia.org/wiki/Anexo:Provincias_de_Chile)  
+[WikiPedia Comunas de Chile](https://es.wikipedia.org/wiki/Anexo:Comunas_de_Chile)  
 
 ## FAQ
 **¿Por qué este paquete es independiente de otros repositorios?**  
@@ -116,14 +110,14 @@ Este paquete npm se centra en proveer acceso y tipado seguro a los datos procesa
 **En caso de no requerir un paquete npm, ¿qué alternativas existen?**  
 Puedes trabajar directamente con los archivos CSV, JSON y SQL, los cuales ofrecen acceso libre a los datos sin intermediación, aunque se sacrifica la integración tipada y las optimizaciones específicas para proyectos web.
 
-**Planean soportar otros lenguajes o entornos?**
+**Planean soportar otros lenguajes o entornos?**  
 Sí, estamos evaluando la posibilidad de extender la librería a otros lenguajes y entornos, como Deno, Bun, Python, Java, C#, entre otros. Te invitamos a contribuir con ideas y propuestas.
 
 **¿Cómo reporto problemas o sugiero mejoras?**  
 Abre un issue en nuestro repositorio de GitHub.
 
 **¿Los datos se actualizan automáticamente?**  
-No, la actualización de datos se realiza manualmente por la comunidad en el repositorio de Python.
+No, la actualización de datos se realiza manualmente por la comunidad en el proyecto de Python de este paquete.
 
 **¿Puedo usar esta librería en proyectos comerciales?**
 Sí, esta librería está disponible bajo la licencia MIT, por lo que puedes usarla en proyectos comerciales.
