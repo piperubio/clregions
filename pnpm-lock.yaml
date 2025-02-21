@@ -35,8 +35,8 @@ importers:
   packages/core:
     dependencies:
       '@clregions/data':
-        specifier: 1.0.0-next.3
-        version: 1.0.0-next.3
+        specifier: 1.0.0-next.4
+        version: 1.0.0-next.4
     devDependencies:
       '@changesets/cli':
         specifier: ^2.28.1
@@ -277,6 +277,9 @@ packages:
 
   '@clregions/data@1.0.0-next.3':
     resolution: {integrity: sha512-+80NmGCteD6fL2T33Cz2VaoXZoIyG1Y865k1mNRC2rdpAJP7LKzNzvvZTEYdMov29CyigPGEsV1IuyNSzHlTEQ==}
+
+  '@clregions/data@1.0.0-next.4':
+    resolution: {integrity: sha512-WSU1kykX/n3i5TNiyOwn0WkypZQjCpMLk1vtMBD4Nr4FqpX3dtqOg2JSdqXViT8YdBuaE4WfKZvsj+LDfTVqVg==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -2442,6 +2445,8 @@ snapshots:
       prettier: 2.8.8
 
   '@clregions/data@1.0.0-next.3': {}
+
+  '@clregions/data@1.0.0-next.4': {}
 
   '@colors/colors@1.5.0':
     optional: true

@@ -28,14 +28,14 @@
     "node": ">=14"
   },
   "scripts": {
-    "lint": "eslint --ext .js,.ts src",
     "docs": "typedoc --options typedoc.json",
     "generate": "tsx ./scripts/generate.mts",
+    "format": "biome format --write src/*.ts",
+    "check": "biome check  src/*.ts",
+    "lint": "tsc",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "build": "tsup src/index.ts --format cjs --dts",
-    "version": "changeset version",
-    "publish": "changeset publish"
+    "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "license": "MIT",
   "devDependencies": {
@@ -55,6 +55,6 @@
     "vitest": "^3.0.6"
   },
   "dependencies": {
-    "@clregions/data": "1.0.0-next.3"
+    "@clregions/data": "1.0.0-next.4"
   }
 }
