@@ -1,3 +1,4 @@
+/* c8 ignore start */
 import { clRegions } from "@clregions/data/object";
 import * as fs from "node:fs";
 

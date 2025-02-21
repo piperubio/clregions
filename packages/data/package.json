@@ -21,7 +21,7 @@
         "check": "biome check  ts/**/*.ts",
         "lint": "tsc",
         "clean": "rm -rf dist",
-        "ci": "npm run clean && npm run format && npm run check && npm run lint && npm run build && npm run check-exports",
+        "ci": "npm run format && npm run check && npm run lint && npm run build && npm run check-exports",
         "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm --profile node16"
     },
     "keywords": [

@@ -1,10 +1,10 @@
 import { clRegions } from "@clregions/data/object";
 import type {
-	CLRegionObject,
-	CLProvinceObject,
 	CLCommuneObject,
+	CLProvinceObject,
+	CLRegionObject,
 } from "@clregions/data/object";
-import type { RegionId, ProvinceId, CommuneId } from "./generate-types";
+import type { CommuneId, ProvinceId, RegionId } from "./generate-types";
 
 /**
  * Returns a deep-cloned object containing all regions.
