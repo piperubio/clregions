@@ -1,9 +1,9 @@
-import provincesData from "../../json/provinces.json" with { type: "json" };
+import provincesData from '../../json/provinces.json' with { type: 'json' };
 
 export type CLProvinceItem = {
-	id: string;
-	name: string;
-	regionId: string;
+  id: string;
+  name: string;
+  regionId: string;
 };
 
 export const provinces: CLProvinceItem[] = provincesData;
