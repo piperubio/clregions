@@ -48,10 +48,29 @@ console.log(regions[0].name);
 ```
 
 ### Uso vía unpkg en proyectos de navegador
+
+Puedes incluir sólo los datos necesarios de regiones, provincias o comunas en tu proyecto
+
 ```html
 <script type="module">
-  import { regions } from "https://unpkg.com/@clregions/data/dist/array/index.js";
+  import { regions } from "https://unpkg.com/@clregions/data@1.0.0-next.4/dist/array/regions.js";
+  import { provinces } from "https://unpkg.com/@clregions/data@1.0.0-next.4/dist/array/provinces.js";
+  import { communes } from "https://unpkg.com/@clregions/data@1.0.0-next.4/dist/array/communes.js";
   console.log(regions[0].name);
+</script>
+```
+
+Como alternativa, puedes importar todos los datos de una sola vez
+
+```html
+<script type="module">
+  // Importa todos los datos como array
+  import { regions, provinces, communes } from "https://unpkg.com/@clregions/data@1.0.0-next.4/dist/array/index.js";
+  console.log(regions[0].name);
+
+  // Importa todos los datos como objeto
+  import { clRegions } from "https://unpkg.com/@clregions/data@1.0.0-next.4/dist/object/index.js";
+  console.log(clRegions.regions["01"].name);
 </script>
 ```
 
