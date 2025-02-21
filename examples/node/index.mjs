@@ -1,5 +1,5 @@
-const { regions, provinces, communes } = require("@clregions/data/array")
-const { clRegions } = require("@clregions/data");
+import { regions, provinces, communes } from "@clregions/data/array"
+import { clRegions } from "@clregions/data";
 
 // === Array Implementation Example ===
 console.log("=== Array Implementation Example ===");

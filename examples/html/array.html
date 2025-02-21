@@ -13,7 +13,13 @@
 </body>
 
 <script type="module">
-    import { regions, provinces, communes } from "https://unpkg.com/@clregions/data@1.0.0-next.1/dist/array/index.js";
+    // Puedes importar sólo los datos de las regiones, provincias y comunas
+    import { regions } from "https://unpkg.com/@clregions/data@1.0.0-next.4/dist/array/regions.js";
+    import { provinces } from "https://unpkg.com/@clregions/data@1.0.0-next.4/dist/array/provinces.js";
+    import { communes } from "https://unpkg.com/@clregions/data@1.0.0-next.4/dist/array/communes.js";
+    // O puedes importar todos los datos
+    //import { regions, provinces, communes } from "https://unpkg.com/@clregions/data@1.0.0-next.4/dist/array/index.js";
+
     const app = document.getElementById('app');
     const check = "Región de Tarapacá" === regions[0].name;
     if (!check) {

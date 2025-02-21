@@ -1,5 +1,11 @@
 # @clregions/data
 
+## 1.0.0-next.4
+
+### Patch Changes
+
+- 34391f7: Add CJS and segregate imports for array data, @clregions/data/array/regions, @clregions/data/array/provinces, @clregions/data/array/communes
+
 ## 1.0.0-next.3
 
 ### Patch Changes

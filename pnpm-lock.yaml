@@ -15,21 +15,24 @@ importers:
       '@biomejs/biome':
         specifier: 1.9.4
         version: 1.9.4
+      ultracite:
+        specifier: 4.1.20
+        version: 4.1.20
 
   examples/node:
     dependencies:
       '@clregions/data':
-        specifier: 1.0.0-next.1
-        version: 1.0.0-next.1
+        specifier: 1.0.0-next.4
+        version: 1.0.0-next.4
 
   examples/vite:
     dependencies:
       '@clregions/data':
-        specifier: 1.0.0-next.1
-        version: 1.0.0-next.1
+        specifier: 1.0.0-next.4
+        version: 1.0.0-next.4
     devDependencies:
       vite:
-        specifier: ^6.1.0
+        specifier: ^6.1.1
         version: 6.1.1(@types/node@18.19.70)
 
   packages/core:
@@ -227,8 +230,8 @@ packages:
   '@changesets/write@0.3.2':
     resolution: {integrity: sha512-kDxDrPNpUgsjDbWBvUo27PzKX4gqeKOlhibaOXDJA6kuBisGqNHv/HwGJrAu8U/dSf8ZEFIeHIPtvSlZI1kULw==}
 
-  '@clregions/data@1.0.0-next.1':
-    resolution: {integrity: sha512-v+0qDTZJaOpxvQGmQJjKO7ahxCBLFQ6gaI/yDjaHZQxbTz09EnoHGjENcsjIQq+KEg6mBPVQzlExvlX9dtG5hg==}
+  '@clregions/data@1.0.0-next.4':
+    resolution: {integrity: sha512-WSU1kykX/n3i5TNiyOwn0WkypZQjCpMLk1vtMBD4Nr4FqpX3dtqOg2JSdqXViT8YdBuaE4WfKZvsj+LDfTVqVg==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -1135,6 +1138,10 @@ packages:
   commander@10.0.1:
     resolution: {integrity: sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==}
     engines: {node: '>=14'}
+
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
 
   commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
@@ -2194,6 +2201,10 @@ packages:
     engines: {node: '>=0.8.0'}
     hasBin: true
 
+  ultracite@4.1.20:
+    resolution: {integrity: sha512-3vS8st0hUa2ui9RicTepFlnh2SIdZ2dCkLq0QU6HPt0KdU19iSLak3shKm83cG3Dka2sLYNerNlWoqbKHwtphg==}
+    hasBin: true
+
   underscore@1.13.7:
     resolution: {integrity: sha512-GMXzWtsc57XAtguZgaQViUOzs0KTkk8ojr3/xAxXLITqf/3EMwxC0inyETfDFjH/Krbhuep0HNbbjI9i/q3F3g==}
 
@@ -2592,7 +2603,7 @@ snapshots:
       human-id: 1.0.2
       prettier: 2.8.8
 
-  '@clregions/data@1.0.0-next.1': {}
+  '@clregions/data@1.0.0-next.4': {}
 
   '@colors/colors@1.5.0':
     optional: true
@@ -3317,6 +3328,8 @@ snapshots:
   color-name@1.1.4: {}
 
   commander@10.0.1: {}
+
+  commander@12.1.0: {}
 
   commander@4.1.1: {}
 
@@ -4380,6 +4393,10 @@ snapshots:
 
   uglify-js@3.19.3:
     optional: true
+
+  ultracite@4.1.20:
+    dependencies:
+      commander: 12.1.0
 
   underscore@1.13.7: {}
 
