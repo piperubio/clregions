@@ -9,6 +9,7 @@
     "@clregions/tsconfig": "1.0.0"
   },
   "changesets": [
-    "wild-fishes-live"
+    "wild-fishes-live",
+    "witty-poets-draw"
   ]
 }
