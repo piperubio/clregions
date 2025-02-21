@@ -19,14 +19,14 @@ importers:
   examples/node:
     dependencies:
       '@clregions/data':
-        specifier: 1.0.0-next.1
-        version: 1.0.0-next.1
+        specifier: 1.0.0-next.4
+        version: 1.0.0-next.4
 
   examples/vite:
     dependencies:
       '@clregions/data':
-        specifier: 1.0.0-next.1
-        version: 1.0.0-next.1
+        specifier: 1.0.0-next.4
+        version: 1.0.0-next.4
     devDependencies:
       vite:
         specifier: ^6.1.0
@@ -227,8 +227,8 @@ packages:
   '@changesets/write@0.3.2':
     resolution: {integrity: sha512-kDxDrPNpUgsjDbWBvUo27PzKX4gqeKOlhibaOXDJA6kuBisGqNHv/HwGJrAu8U/dSf8ZEFIeHIPtvSlZI1kULw==}
 
-  '@clregions/data@1.0.0-next.1':
-    resolution: {integrity: sha512-v+0qDTZJaOpxvQGmQJjKO7ahxCBLFQ6gaI/yDjaHZQxbTz09EnoHGjENcsjIQq+KEg6mBPVQzlExvlX9dtG5hg==}
+  '@clregions/data@1.0.0-next.4':
+    resolution: {integrity: sha512-WSU1kykX/n3i5TNiyOwn0WkypZQjCpMLk1vtMBD4Nr4FqpX3dtqOg2JSdqXViT8YdBuaE4WfKZvsj+LDfTVqVg==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -2592,7 +2592,7 @@ snapshots:
       human-id: 1.0.2
       prettier: 2.8.8
 
-  '@clregions/data@1.0.0-next.1': {}
+  '@clregions/data@1.0.0-next.4': {}
 
   '@colors/colors@1.5.0':
     optional: true
