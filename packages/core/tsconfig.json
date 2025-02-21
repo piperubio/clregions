@@ -1,6 +1,7 @@
 {
     "extends": "@clregions/tsconfig/base.json",
     "compilerOptions": {
+        "module": "nodenext",
         "resolveJsonModule": true
     },
 }
