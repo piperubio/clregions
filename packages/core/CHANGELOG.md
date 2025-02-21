@@ -1,5 +1,11 @@
 # @clregions/core
 
+## 1.0.0-next.0
+
+### Major Changes
+
+- ce674b1: Fix Chilean Provinces and Communes Data and refactor lib implementations
+
 ## 0.1.7
 
 ### Patch Changes
