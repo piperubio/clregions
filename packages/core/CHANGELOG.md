@@ -1,5 +1,11 @@
 # @clregions/core
 
+## 1.0.0-next.2
+
+### Patch Changes
+
+- 87a542f: Fix types exports
+
 ## 1.0.0-next.1
 
 ### Patch Changes

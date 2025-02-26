@@ -1,6 +1,6 @@
 {
     "name": "@clregions/core",
-    "version": "1.0.0-next.1",
+    "version": "1.0.0-next.2",
     "description": "",
     "main": "dist/index.js",
     "types": "./dist/index.d.ts",
