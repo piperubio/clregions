@@ -2,6 +2,8 @@ import { defineConfig } from 'tsup';
 
 export default defineConfig({
   entry: [
+    'ts/index.ts',
+    'ts/types/index.ts',
     'ts/object/index.ts',
     'ts/array/index.ts',
     'ts/array/regions.ts',

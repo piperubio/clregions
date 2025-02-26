@@ -1,12 +1,13 @@
 import object from '../../json/object.json' with { type: 'json' };
+import type { CommuneId, ProvinceId, RegionId } from '../types/index.ts';
 
 export type CLCommuneObject = {
-  id: string;
+  id: CommuneId;
   name: string;
 };
 
 export type CLProvinceObject = {
-  id: string;
+  id: ProvinceId;
   name: string;
   communes: {
     [key: string]: CLCommuneObject;
@@ -14,7 +15,7 @@ export type CLProvinceObject = {
 };
 
 export type CLRegionObject = {
-  id: string;
+  id: RegionId;
   name: string;
   shortName: string;
   abbreviation: string;
@@ -25,11 +26,11 @@ export type CLRegionObject = {
 };
 
 export type CLCountryObject = {
-  country: string;
-  countryCode: string;
+  country: 'Chile';
+  countryCode: 'CL';
   regions: {
     [key: string]: CLRegionObject;
   };
 };
 
-export const clRegions: CLCountryObject = object;
+export const clRegions = object as CLCountryObject;
