@@ -9,6 +9,7 @@
     "@clregions/tsconfig": "1.0.0"
   },
   "changesets": [
+    "blue-kings-smoke",
     "fluffy-poems-repair",
     "real-donuts-clean",
     "tidy-suns-compare",
