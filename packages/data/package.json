@@ -48,7 +48,7 @@
     "format": "biome format --write ts/**/*.ts",
     "check": "biome check  ts/**/*.ts",
     "lint": "tsc",
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "ci": "npm run clean && npm run format && npm run check && npm run lint && npm run build && npm run check-exports",
     "check-exports": "attw --pack . --profile node16"
   },
@@ -72,13 +72,12 @@
   ],
   "author": "piperubio",
   "license": "MIT",
-  "files": [
-    "dist/*"
-  ],
+  "files": ["dist/*"],
   "devDependencies": {
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.3",
     "@arethetypeswrong/cli": "^0.17.3",
-    "@clregions/tsconfig": "workspace:*"
+    "@clregions/tsconfig": "workspace:*",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
   }
 }
