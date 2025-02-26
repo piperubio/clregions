@@ -1,2 +1,9 @@
-export * from './generate-types';
-export * from './lib';
+export {
+  CLCommuneObject,
+  CLProvinceObject,
+  CLRegionObject,
+  CommuneId,
+  ProvinceId,
+  RegionId,
+} from '@clregions/data';
+export * from './lib.ts';

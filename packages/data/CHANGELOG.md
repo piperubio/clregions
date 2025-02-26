@@ -1,5 +1,11 @@
 # @clregions/data
 
+## 1.0.0-next.6
+
+### Patch Changes
+
+- 7f9e4e7: All types in data
+
 ## 1.0.0-next.5
 
 ### Patch Changes

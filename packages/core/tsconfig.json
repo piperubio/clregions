@@ -1,8 +1,9 @@
 {
-    "extends": "@clregions/tsconfig/base.json",
-    "compilerOptions": {
-        "module": "nodenext",
-        "resolveJsonModule": true,
-        "noEmit": true
-    },
+  "extends": "@clregions/tsconfig/base.json",
+  "compilerOptions": {
+    "module": "nodenext",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  }
 }

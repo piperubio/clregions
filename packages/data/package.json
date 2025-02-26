@@ -1,41 +1,81 @@
 {
   "name": "@clregions/data",
-  "version": "1.0.0-next.5",
+  "version": "1.0.0-next.6",
   "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
   "type": "module",
-  "main": "./dist/object/index.cjs",
-  "module": "./dist/object/index.js",
-  "types": "./dist/object/index.d.ts",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/object/index.js",
-      "require": "./dist/object/index.cjs",
-      "types": "./dist/object/index.d.ts"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     },
     "./object": {
-      "import": "./dist/object/index.js",
-      "require": "./dist/object/index.cjs",
-      "types": "./dist/object/index.d.ts"
+      "import": {
+        "types": "./dist/object/index.d.ts",
+        "default": "./dist/object/index.js"
+      },
+      "require": {
+        "types": "./dist/object/index.d.cts",
+        "default": "./dist/object/index.cjs"
+      }
     },
     "./array": {
-      "import": "./dist/array/index.js",
-      "require": "./dist/array/index.cjs",
-      "types": "./dist/array/index.d.ts"
+      "import": {
+        "types": "./dist/array/index.d.ts",
+        "default": "./dist/array/index.js"
+      },
+      "require": {
+        "types": "./dist/array/index.d.cts",
+        "default": "./dist/array/index.cjs"
+      }
     },
     "./array/communes": {
-      "import": "./dist/array/communes.js",
-      "require": "./dist/array/communes.cjs",
-      "types": "./dist/array/communes.d.ts"
+      "import": {
+        "types": "./dist/array/communes.d.ts",
+        "default": "./dist/array/communes.js"
+      },
+      "require": {
+        "types": "./dist/array/communes.d.cts",
+        "default": "./dist/array/communes.cjs"
+      }
     },
     "./array/provinces": {
-      "import": "./dist/array/provinces.js",
-      "require": "./dist/array/provinces.cjs",
-      "types": "./dist/array/provinces.d.ts"
+      "import": {
+        "types": "./dist/array/provinces.d.ts",
+        "default": "./dist/array/provinces.js"
+      },
+      "require": {
+        "types": "./dist/array/provinces.d.cts",
+        "default": "./dist/array/provinces.cjs"
+      }
     },
     "./array/regions": {
-      "import": "./dist/array/regions.js",
-      "require": "./dist/array/regions.cjs",
-      "types": "./dist/array/regions.d.ts"
+      "import": {
+        "types": "./dist/array/regions.d.ts",
+        "default": "./dist/array/regions.js"
+      },
+      "require": {
+        "types": "./dist/array/regions.d.cts",
+        "default": "./dist/array/regions.cjs"
+      }
+    },
+    "./types": {
+      "import": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/types/index.js"
+      },
+      "require": {
+        "types": "./dist/types/index.d.cts",
+        "default": "./dist/types/index.cjs"
+      }
     }
   },
   "homepage": "https://github.com/piperubio/clregions",
@@ -72,7 +112,9 @@
   ],
   "author": "piperubio",
   "license": "MIT",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.3",
     "@clregions/tsconfig": "workspace:*",
