@@ -1,6 +1,6 @@
 {
     "name": "@clregions/core",
-    "version": "1.0.0-next.0",
+    "version": "1.0.0-next.1",
     "description": "",
     "main": "dist/index.js",
     "types": "./dist/index.d.ts",
@@ -70,6 +70,6 @@
         "@vitest/ui": "^3.0.6"
     },
     "dependencies": {
-        "@clregions/data": "1.0.0-next.4"
+        "@clregions/data": "1.0.0-next.5"
     }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@clregions/data",
-  "version": "1.0.0-next.4",
+  "version": "1.0.0-next.5",
   "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
   "type": "module",
   "main": "./dist/object/index.cjs",
@@ -9,15 +9,33 @@
   "exports": {
     ".": {
       "import": "./dist/object/index.js",
-      "require": "./dist/object/index.cjs"
+      "require": "./dist/object/index.cjs",
+      "types": "./dist/object/index.d.ts"
     },
     "./object": {
       "import": "./dist/object/index.js",
-      "require": "./dist/object/index.cjs"
+      "require": "./dist/object/index.cjs",
+      "types": "./dist/object/index.d.ts"
     },
     "./array": {
       "import": "./dist/array/index.js",
-      "require": "./dist/array/index.cjs"
+      "require": "./dist/array/index.cjs",
+      "types": "./dist/array/index.d.ts"
+    },
+    "./array/communes": {
+      "import": "./dist/array/communes.js",
+      "require": "./dist/array/communes.cjs",
+      "types": "./dist/array/communes.d.ts"
+    },
+    "./array/provinces": {
+      "import": "./dist/array/provinces.js",
+      "require": "./dist/array/provinces.cjs",
+      "types": "./dist/array/provinces.d.ts"
+    },
+    "./array/regions": {
+      "import": "./dist/array/regions.js",
+      "require": "./dist/array/regions.cjs",
+      "types": "./dist/array/regions.d.ts"
     }
   },
   "homepage": "https://github.com/piperubio/clregions",
@@ -54,7 +72,9 @@
   ],
   "author": "piperubio",
   "license": "MIT",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "devDependencies": {
     "tsup": "^8.3.5",
     "typescript": "^5.7.3",

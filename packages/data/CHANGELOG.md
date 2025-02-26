@@ -1,5 +1,11 @@
 # @clregions/data
 
+## 1.0.0-next.5
+
+### Patch Changes
+
+- 7fa5e28: Fix exports for submodules array regions, provinces and communes
+
 ## 1.0.0-next.4
 
 ### Patch Changes

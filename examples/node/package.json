@@ -9,7 +9,7 @@
     "start-esm": "node index.mjs"
   },
   "dependencies": {
-    "@clregions/data": "1.0.0-next.4"
+    "@clregions/data": "1.0.0-next.5"
   },
   "keywords": [],
   "author": "",

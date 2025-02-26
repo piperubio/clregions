@@ -1,5 +1,12 @@
 # @clregions/core
 
+## 1.0.0-next.1
+
+### Patch Changes
+
+- Updated dependencies [7fa5e28]
+  - @clregions/data@1.0.0-next.5
+
 ## 1.0.0-next.0
 
 ### Major Changes
