@@ -1,5 +1,17 @@
 # @clregions/core
 
+## 1.0.0-next.3
+
+### Patch Changes
+
+- 28c7c80: Add findRegionByCommune
+
+## 1.0.0-next.2
+
+### Patch Changes
+
+- 87a542f: Fix types exports
+
 ## 1.0.0-next.1
 
 ### Patch Changes
