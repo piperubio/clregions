@@ -1,10 +1,12 @@
-import { clRegions } from '@clregions/data/object';
 import type {
   CLCommuneObject,
   CLProvinceObject,
   CLRegionObject,
-} from '@clregions/data/object';
-import type { CommuneId, ProvinceId, RegionId } from './generate-types';
+  CommuneId,
+  ProvinceId,
+  RegionId,
+} from '@clregions/data';
+import { clRegions } from '@clregions/data/object';
 
 /**
  * Returns a deep-cloned object containing all regions.
@@ -172,6 +174,11 @@ export const findCommuneById = (
   }
 };
 
+/*
+ * Returns a deep-cloned region object by a commune identifier.
+ * @param {CommuneId} communeId - The commune identifier.
+ * @returns {CLRegionObject | null} The region object or null if not found.
+ */
 export const findRegionByCommune = (
   communeId: CommuneId
 ): CLRegionObject | null => {
