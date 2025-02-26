@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@clregions/data": "1.0.0-next.5"
+    "@clregions/data": "1.0.0-next.6"
   },
   "devDependencies": {
     "vite": "^6.1.1"

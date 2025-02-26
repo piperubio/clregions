@@ -1,6 +1,6 @@
 {
   "name": "@clregions/data",
-  "version": "1.0.0-next.5",
+  "version": "1.0.0-next.6",
   "description": "Paquete de datos para regiones de Chile, proporcionando acceso a información estructurada en formato JSON, CSV y SQL",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -78,7 +78,6 @@
       }
     }
   },
-
   "homepage": "https://github.com/piperubio/clregions",
   "bugs": {
     "url": "https://github.com/piperubio/clregions/issues"
@@ -113,7 +112,9 @@
   ],
   "author": "piperubio",
   "license": "MIT",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.3",
     "@clregions/tsconfig": "workspace:*",
