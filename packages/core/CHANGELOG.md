@@ -1,5 +1,11 @@
 # @clregions/core
 
+## 1.0.0-next.5
+
+### Patch Changes
+
+- 17497f1: Fix Types
+
 ## 1.0.0-next.4
 
 ### Patch Changes
