@@ -1,5 +1,24 @@
 # @clregions/core
 
+## 1.0.0
+
+### Major Changes
+
+- 3136eb1: CLRegions Release v1.0
+- 7963445: Fix Chilean Provinces and Communes Data and refactor lib implementations
+
+### Patch Changes
+
+- a5ec272: Add findRegionByCommune
+- 7b73729: Fix Types
+- 87a542f: Fix types exports
+- Updated dependencies [3136eb1]
+- Updated dependencies [3cad1f8]
+- Updated dependencies [7b73729]
+- Updated dependencies [7fa5e28]
+- Updated dependencies [f3d8f4e]
+  - @clregions/data@1.0.0
+
 ## 1.0.0-next.5
 
 ### Patch Changes

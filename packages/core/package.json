@@ -1,6 +1,6 @@
 {
   "name": "@clregions/core",
-  "version": "1.0.0-next.5",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -79,6 +79,6 @@
     "vitest": "^3.0.6"
   },
   "dependencies": {
-    "@clregions/data": "1.0.0-next.6"
+    "@clregions/data": "1.0.0"
   }
 }

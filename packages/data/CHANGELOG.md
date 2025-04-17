@@ -1,5 +1,18 @@
 # @clregions/data
 
+## 1.0.0
+
+### Major Changes
+
+- 3136eb1: CLRegions Release v1.0
+
+### Patch Changes
+
+- 3cad1f8: Add CJS and segregate imports for array data, @clregions/data/array/regions, @clregions/data/array/provinces, @clregions/data/array/communes
+- 7b73729: All types in data
+- 7fa5e28: Fix exports for submodules array regions, provinces and communes
+- f3d8f4e: ClRegions Data Prerelease 2
+
 ## 1.0.0-next.6
 
 ### Patch Changes
