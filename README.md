@@ -1,113 +1,64 @@
-# Chile regiones, provincias y comunas
+# clregions — datos y utilidades de regiones, provincias y comunas de Chile
 
-¡Bienvenido! Con nuestra librería de TypeScript, podrás acceder fácilmente a información actualizada y precisa sobre las regiones, provincias y comunas de Chile, ahorrando tiempo y esfuerzo al no tener que recopilar y mantener los datos tú mismo.
+Monorepo con dos paquetes publicados en npm para trabajar con la división político–administrativa de Chile.
 
-🔒 Ofrece una estructura de tipos segura para trabajar con confianza en la integridad de tus datos.
+- `@clregions/data`: datos tipados (objeto y arrays) listos para usar en Node, navegador o CDN.
+- `@clregions/core`: utilidades inmutables y tipadas para consultar regiones, provincias y comunas.
 
-🌎 Te permite trabajar con datos geográficos de una manera intuitiva y fácil de entender.
+## Enlaces rápidos
 
-🚫 La librería clregions no tiene dependencias externas, lo que reduce los conflictos de versiones y simplifica el proceso de instalación. 
+- Paquete core: ./packages/core/README.md
+- Paquete data: ./packages/data/README.md
+- Ejemplos: ./examples
 
-🚀 Compatible con Node.js a partir de la versión 14, lo que te permite utilizarla en tus proyectos de backend.
+## Instalación rápida
 
-🌐 También es compatible con los navegadores web, lo que te permite utilizarla en tus proyectos frontend.
-
-🤖 Se integra perfectamente con TypeScript y es fácil de usar para nuevos usuarios.
-
-🎨 clregions es altamente personalizable y puedes utilizar sólo una parte de la librería si eso es todo lo que necesitas.
-
-📚 La documentación detallada de clregions te ayudará a comprender fácilmente cómo utilizar la librería y resolver cualquier problema.
-
-🛡️ Pull Request bienvenidos!! Siéntete libre de contribuir con la librería, cualquier ayuda es bienvenida.
-
-☕ Si tienes alguna idea de como mejorar nuestra API, abre una discusión y conversemos!
-
-## Instalación
-
-Con npm 
 ```bash
-$ npm install @clregions/core
+npm install @clregions/core
+# o
+npm install @clregions/data
 ```
 
-Con yarn 
+## Uso básico (@clregions/core)
+
+```ts
+import { findRegionById } from '@clregions/core';
+const rm = findRegionById('13');
+```
+
+## Características
+
+- Tipos estrictos para regiones, provincias y comunas
+- ESM/CJS; funciona en Node y navegadores (vía bundlers)
+- Sin dependencias externas
+- Datos mantenidos en `@clregions/data` y consumidos de forma inmutable en `@clregions/core`
+
+## Desarrollo
+
+Requisitos: Node 18+, pnpm.
+
 ```bash
-$ yarn add @clregions/core
+pnpm i
+pnpm -w -F @clregions/core build
+pnpm -w -F @clregions/data build
+pnpm -F @clregions/core test
 ```
 
-Con pnpm
+Format y lint:
+
 ```bash
-$ pnpm add @clregions/core
+pnpm biome format --write .
+pnpm biome check .
+pnpm -F @clregions/core lint
+pnpm -F @clregions/data lint
 ```
 
+## Estructura
 
-# Uso
+- packages/core: API de consulta inmutable sobre los datos.
+- packages/data: dataset tipado y exportado en distintos formatos.
+- examples: ejemplos HTML, Node y Vite.
 
+## Licencia y contribución
 
-## Obtener todas las regiones
-
-```ts
-import { getAllRegions } from '@clregions/core';
-
-const regions: Record<string, CLRegion> = getAllRegions();
-```
-
-## Obtener una región por su código
-
-```ts
-import { getRegionById } from '@clregions/core';
-
-const region: CLRegion | null = getRegionById('13');
-```
-
-
-## Obtener todas las provincias de una región
-
-```ts
-import { getAllProvincesByRegion } from '@clregions/core';
-const provinces: Record<string, CLProvince> | null = getAllProvincesByRegion('13');
-```
-
-## Obtener todas las comunas de una región
-
-```ts
-import { getAllCommunesByRegion } from '@clregions/core';
-const communes: Record<string, CLCommune> | null = getAllCommunesByRegion('13');
-```
-
-## Obtener todas las provincias
-
-```ts
-import { getAllProvinces } from '@clregions/core';
-
-const provinces: Record<string, CLProvince> = getAllProvinces();
-```
-
-## Obtener una provincia por su código
-
-```ts
-import { getProvinceById } from '@clregions/core';
-
-const province: CLProvince | null = getProvinceById('011');
-```
-
-## Obtener todas las comunas de una provincia
-
-```ts
-import { getAllCommunesByProvince } from '@clregions/core';
-const communes: Record<string, CLCommune> | null = getAllCommunesByProvince('011');
-```
-## Obtener todas las comunas
-
-```ts
-import { getAllCommunes } from '@clregions/core';
-
-const communes: Record<string, CLCommune> = getAllCommunes();
-```
-
-## Obtener una comuna por su código
-
-```ts
-import { getCommuneById } from '@clregions/core';
-
-const commune: CLCommune | null = getCommuneById('01101');
-```
+MIT. PRs y discusiones bienvenidas.
